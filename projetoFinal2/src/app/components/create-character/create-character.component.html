@@ -1,0 +1,25 @@
+
+<div class="login">
+  <h2 class="active">Create new Character </h2>
+  <div class=form>
+
+    <input type="text" class="text"  [(ngModel)]="user" >
+     <span>Username</span>
+    <br>
+
+    <input type="password" class="text"  [(ngModel)]="pass" >
+    <span>password</span>
+    <br>
+
+    <input type="text" class="text"  [(ngModel)]="name">
+     <span>Character's Name</span>
+    <br>
+    <input type="text" class="text"  [(ngModel)]="isMonster">
+     <span>Is it a monster ? [y/n]</span>
+    <br>
+
+    <button class="signin" (click)="registar()" >Create</button>
+  </div>
+
+</div>
+

@@ -1,0 +1,112 @@
+ 
+.all
+{
+  color: white;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-weight: 800;
+
+}
+.player
+{
+  margin-top: 160px;
+  margin-left:300px;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.424);
+  position: absolute;
+
+}
+
+.enemy
+{
+  margin-left: 1100px;
+  margin-top: 160px;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.417);
+  position: absolute;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+.img1{
+  width: 100%;
+  margin-left: 100PX;
+  height: 350px;
+  background-image: url("hero.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.img2{
+  width: 100%;
+  margin-left: 100PX;
+
+  text-align: center;
+  height: 350px;
+  background-image: url("rogue.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.fight{
+  color: rgb(27, 27, 27);
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-weight: 800;
+  position: absolute;
+  margin-left: 955px;
+  margin-top: 850px;
+  padding: 10px 20px;
+}
+
+
+#hpC{
+  transition: 0.5s;
+  width: 600px;
+  margin-left:300px;
+  height: 60px;
+  position: absolute;
+  margin-top: 90px;
+
+}
+#hpC2{
+
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 68, 68);
+  text-align: center;
+}
+
+
+#hpE{
+  width: 600px;
+  margin-left: 1100px;
+  transition: 0.5s;
+  height: 60px;
+  margin-top: 90px;
+  position: absolute;
+
+}
+#hpE2{
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 68, 68);
+  text-align: center;
+}
+
+
+h3{
+  position: absolute;
+  margin-left: 46.5%;
+}
+

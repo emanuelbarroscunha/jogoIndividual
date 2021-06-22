@@ -1,0 +1,31 @@
+
+
+<div class="login">
+  <h2 class="active">Your Character </h2>
+   
+  <div class=form>
+     <p>Name : <a id="name">No Character Yet</a></p>
+     <p>Current Life : <a id="life">txt</a></p>
+     <p>Current Attack : <a id="atk">txt</a></p>
+     <p>Current Intelligence : <a id="int">txt</a></p>
+     <p>--------------------</p>
+     <p>Spend your Points: <a id="points">0</a></p>
+     <p>--------------------</p>
+     <p>Life : 0</p> <button class="signin"(click)="moreStatsHP()">+</button>
+     <p>Attack : 0</p> <button class="signin" (click)="moreStatsAtk()">+</button>
+     <p>INTELLIGENCE : 0</p> <button class="signin" (click)="moreStatsInt()">+</button>
+
+
+
+  <br>
+  <br>
+
+ <br>
+ <br>
+
+  <button [routerLink]="['/createCharacter']" class="signin2"> Create a new character</button>
+
+  </div>
+</div>
+
+
