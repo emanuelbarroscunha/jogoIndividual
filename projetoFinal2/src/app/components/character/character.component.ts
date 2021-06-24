@@ -87,7 +87,8 @@ export class CharacterComponent implements OnInit {
   this.attack  =  this.newATK;
   this.user =this.pService.username;
   this.pass =this.pService.password;
-  this.gService.CriarPersonagem2(this.user,this.name,this.pass,this.isMonster,this.int,this.life,this.attack).subscribe(data => {
+  this.idPersonagem =  this.pService.player.id;
+  this.gService.CriarPersonagem2(this.user,this.name,this.pass,this.isMonster,this.int,this.life,this.attack, this.idPersonagem).subscribe(data => {
     console.log
     (data);
     this.changeTxt2();
@@ -116,7 +117,8 @@ export class CharacterComponent implements OnInit {
   this.attack  =  this.pService.player.atk;
   this.user =this.pService.username;
   this.pass =this.pService.password;
-  this.gService.CriarPersonagem2(this.user,this.name,this.pass,this.isMonster,this.int,this.life,this.attack).subscribe(data => {
+  this.idPersonagem =  this.pService.player.id;
+  this.gService.CriarPersonagem2(this.user,this.name,this.pass,this.isMonster,this.int,this.life,this.attack, this.idPersonagem).subscribe(data => {
     console.log
     (data);
     this.changeTxt2();
@@ -145,7 +147,8 @@ export class CharacterComponent implements OnInit {
   this.attack  =  this.pService.player.atk;
   this.user =this.pService.username;
   this.pass =this.pService.password;
-  this.gService.CriarPersonagem2(this.user,this.name,this.pass,this.isMonster,this.int,this.life,this.attack).subscribe(data => {
+  this.idPersonagem =  this.pService.player.id;
+  this.gService.CriarPersonagem2(this.user,this.name,this.pass,this.isMonster,this.int,this.life,this.attack, this.idPersonagem).subscribe(data => {
     console.log
     (data);
     this.changeTxt2();
@@ -168,5 +171,5 @@ export class CharacterComponent implements OnInit {
   int : string = "";
   life : string = "";
   attack : string = "";
-
+  idPersonagem:string ="";
 }

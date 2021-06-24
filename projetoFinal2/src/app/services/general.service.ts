@@ -45,9 +45,10 @@ export class GeneralService {
   return this.http.post(this.linkCriarChar,dataToSend);
  }
 
- CriarPersonagem2(user:string,name:string, pass:string, isMonster:string,int:string,life:string ,attack:string )
+ CriarPersonagem2(user:string,name:string, pass:string, isMonster:string,int:string,life:string ,attack:string , idChar:string )
  {
   let dataToSend : FormData = new FormData();
+  dataToSend.append("idChar", idChar);
   dataToSend.append("name", name);
   dataToSend.append("atk", attack);
   dataToSend.append("isMonster", "false");
